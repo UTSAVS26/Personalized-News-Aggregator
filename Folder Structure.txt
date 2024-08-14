@@ -1,0 +1,53 @@
+personalized-news-aggregator/
+│
+├── news_aggregator/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   ├── asgi.py (if needed for WebSockets)
+│   ├── apps/
+│   │   ├── __init__.py
+│   │   ├── news/
+│   │   │   ├── __init__.py
+│   │   │   ├── models.py
+│   │   │   ├── views.py
+│   │   │   ├── urls.py
+│   │   │   ├── serializers.py
+│   │   │   └── templates/
+│   │   │       ├── news/
+│   │   │       │   ├── index.html
+│   │   │       │   ├── article_detail.html
+│   │   │       │   └── base.html
+│   │   ├── users/
+│   │   │   ├── __init__.py
+│   │   │   ├── models.py
+│   │   │   ├── views.py
+│   │   │   ├── urls.py
+│   │   │   └── templates/
+│   │   │       └── registration/
+│   │   │           ├── login.html
+│   │   │           └── signup.html
+│   │   ├── templates/
+│   │   │   ├── base.html
+│   │   │   └── includes/
+│   │   │       ├── header.html
+│   │   │       └── footer.html
+│   │   ├── static/
+│   │       ├── css/
+│   │       ├── js/
+│   │       └── images/
+│   │
+│   ├── manage.py
+│   └── tests/
+│       ├── __init__.py
+│       ├── test_views.py
+│       ├── test_models.py
+│       └── test_api.py
+│
+├── requirements.txt
+├── Dockerfile
+├── .env
+├── .gitignore
+├── LICENSE
+└── README.md

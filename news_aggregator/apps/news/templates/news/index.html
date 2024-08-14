@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>News Articles</h1>
+<ul>
+    {% for article in articles %}
+    <li>
+        <a href="{% url 'article_detail' article.pk %}">{{ article.title }}</a>
+        <p>By {{ article.author }} on {{ article.published_at }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

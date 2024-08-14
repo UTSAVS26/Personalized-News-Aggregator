@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ article.title }}</h1>
+<p>By {{ article.author }} on {{ article.published_at }}</p>
+<p>{{ article.content }}</p>
+<p><a href="{{ article.url }}" target="_blank">Read more at {{ article.source }}</a></p>
+{% endblock %}
