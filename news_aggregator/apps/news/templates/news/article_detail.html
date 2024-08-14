@@ -1,8 +1,18 @@
-{% extends "base.html" %}
-
-{% block content %}
-<h1>{{ article.title }}</h1>
-<p>By {{ article.author }} on {{ article.published_at }}</p>
-<p>{{ article.content }}</p>
-<p><a href="{{ article.url }}" target="_blank">Read more at {{ article.source }}</a></p>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ article.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="article-container">
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.content }}</p>
+        
+        <h2>Summary:</h2>
+        <p>{{ summary }}</p>
+    </div>
+</body>
+</html>

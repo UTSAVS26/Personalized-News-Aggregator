@@ -48,6 +48,7 @@ pip install -r requirements.txt
   ```dotenv
   DJANGO_SECRET_KEY='your-secret-key'
   DEBUG=True
+  OPENAI_API_KEY='your-openai-key'
   ```
 
 ### 5. Apply Migrations
